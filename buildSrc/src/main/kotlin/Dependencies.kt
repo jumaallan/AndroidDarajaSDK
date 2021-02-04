@@ -66,6 +66,7 @@ object BuildPlugins {
     const val kotlinAndroidExtensions = "org.jetbrains.kotlin.android.extensions"
     const val gradleVersionsPlugin = "com.github.ben-manes.versions"
     const val jacocoAndroid = "com.hiya.jacoco-android"
+    const val novoda = "com.novoda.bintray-release"
 }
 
 object Libraries {

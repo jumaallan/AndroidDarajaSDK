@@ -7,6 +7,7 @@ plugins {
     id(BuildPlugins.dagger)
     id(BuildPlugins.kapt)
     id(BuildPlugins.jacocoAndroid)
+    id(BuildPlugins.novoda)
 }
 
 jacoco {
@@ -54,6 +55,7 @@ android {
     }
 }
 
+//https://github.com/novoda/bintray-release/issues/298
 configure<PublishExtension> {
     userOrg = "androidstudy"
     groupId = "com.androidstudy"
