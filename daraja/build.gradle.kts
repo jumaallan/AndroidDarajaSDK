@@ -1,3 +1,5 @@
+import com.novoda.gradle.release.PublishExtension
+
 plugins {
     id(BuildPlugins.androidLibrary)
     id(BuildPlugins.kotlinAndroid)
@@ -52,16 +54,15 @@ android {
     }
 }
 
-// publish {
-//    userOrg = 'androidstudy'
-//    groupId = 'com.androidstudy'
-//    artifactId = 'daraja'
-//    publishVersion = '1.0.2'
-//    desc = 'Android MPESA SDK Library - Dubbed Daraja'
-//    licences = ['Apache-2.0']
-//    repoName = 'android-mpesa-api'
-//    website = 'https://github.com/jumaallan/android-mpesa-api'
-// }
+configure<PublishExtension> {
+    userOrg = "androidstudy"
+    groupId = "com.androidstudy"
+    artifactId = "daraja"
+    publishVersion = "1.0.2"
+    desc = "Android MPESA SDK Library - Dubbed Daraja"
+    repoName = "android-mpesa-api"
+    website = "https://github.com/jumaallan/android-mpesa-api"
+}
 
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
