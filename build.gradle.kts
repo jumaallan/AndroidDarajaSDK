@@ -38,7 +38,7 @@ allprojects {
 buildscript {
     val kotlinVersion by extra("1.4.10")
     val jacocoVersion by extra("0.2")
-    val novodaVersion by extra("0.9")
+    val novodaVersion by extra("0.9.2")
 
     dependencies {
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
